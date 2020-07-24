@@ -1,0 +1,22 @@
+{
+  "name": "rentoria",
+  "version": "1.0.0",
+  "description": "Rentoria",
+  "main": "app.js",
+  "scripts": {
+    "app": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jianlihenry/rentoria.git"
+  },
+  "author": "jianlihenry",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jianlihenry/rentoria/issues"
+  },
+  "homepage": "https://github.com/jianlihenry/rentoria#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
