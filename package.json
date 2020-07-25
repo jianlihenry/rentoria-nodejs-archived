@@ -4,7 +4,7 @@
   "description": "Rentoria",
   "main": "app.js",
   "scripts": {
-    "app": "node app.js"
+    "app": "nodemon"
   },
   "repository": {
     "type": "git",
@@ -19,5 +19,8 @@
   "dependencies": {
     "express": "^4.17.1",
     "mongoose": "^5.9.25"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
   }
 }

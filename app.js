@@ -1,8 +1,15 @@
-var express = require("express");
-var app = express();
-app.listen(3000, () => {
+const express = require("express"),
+  bodyparser = require("body-parser"),
+  port = process.env.PORT || 3000,
+  app = express();
+
+const property_controller = require('./api/controllers/property_controller.js');
+
+app.use(bodyparser.json());
+app.use(bodyparser.urlencoded({ extended: false }));
+
+property_controller(app);
+
+app.listen(port, () => {
  console.log("Server running on port 3000");
 });
-app.get("/test", (req, res, next) => {
-  res.json(["Tony","Lisa","Michael","Ginger","Food"]);
- });
