@@ -2,6 +2,7 @@ const express = require('express'),
   bodyparser = require('body-parser'),
   mongoose = require('mongoose'),
   pino = require('express-pino-logger')(),
+  logger = require('pino')({ level: process.env.LOG_LEVEL || 'info' }),
   port = process.env.PORT || 3000,
   app = express();
 
@@ -16,5 +17,5 @@ const propertyController = require('./api/controllers/property_controller.js');
 propertyController(app);
 
 app.listen(port, () => {
- console.log("Server running on port 3000");
+  logger.info('Server running on port %d', port);
 });
