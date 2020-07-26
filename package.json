@@ -4,7 +4,7 @@
   "description": "Rentoria",
   "main": "app.js",
   "scripts": {
-    "app": "nodemon"
+    "app": "nodemon | pino-pretty"
   },
   "repository": {
     "type": "git",
@@ -18,9 +18,12 @@
   "homepage": "https://github.com/jianlihenry/rentoria#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "mongoose": "^5.9.25"
+    "express-pino-logger": "^5.0.0",
+    "mongoose": "^5.9.25",
+    "pino": "^6.4.1"
   },
   "devDependencies": {
-    "nodemon": "^2.0.4"
+    "nodemon": "^2.0.4",
+    "pino-pretty": "^4.1.0"
   }
 }
